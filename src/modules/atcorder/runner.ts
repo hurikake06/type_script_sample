@@ -1,10 +1,10 @@
 export default class Runner {
-  run(input :string) :void { throw new Error("Method not implemented."); }
-  getAtcoderImput() :string { return require("fs").readFileSync("/dev/stdin", "utf8"); }
+  run(input: string): void { throw new Error("Method not implemented."); }
+  getAtcoderImput(): string { return require("fs").readFileSync("/dev/stdin", "utf8"); }
 
-  main() :void { this.run(this.getAtcoderImput()) }
+  main(): void { this.run(this.getAtcoderImput()) }
 
-  test(input :string) :void {
+  test(input: string): void {
     console.log("------------");
     console.log("Test Exec.");
     console.log("------------");

@@ -1,8 +1,8 @@
 class Answer {
-	getAtcoderImput() :string { return require("fs").readFileSync("/dev/stdin", "utf8"); }
-	main() :void { this.run(this.getAtcoderImput()) }
+	getAtcoderImput(): string { return require("fs").readFileSync("/dev/stdin", "utf8"); }
+	main(): void { this.run(this.getAtcoderImput()) }
 
-  run(input_org :string) :void {
+  run(input_org: string): void {
 		// 1行目がinput[0], 2行目がinput[1], …に入る
 		let input: string[] = input_org.split("\n");
 		let tmp: string[] = input[1].split(" ");
