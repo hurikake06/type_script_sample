@@ -1,4 +1,4 @@
-class Answer {
+export default class Answer {
 	getAtcoderImput(): string { return require("fs").readFileSync("/dev/stdin", "utf8"); }
 	main(): void { this.run(this.getAtcoderImput()) }
 
